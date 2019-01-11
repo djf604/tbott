@@ -272,10 +272,139 @@
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Book an Appointment</h3>
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Full Name">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
-                    <p class="white">The rest of the necessary form information would go here</p>
+				<form action="" class="popup-form" style="max-width:100%">
+					<input type="text" name="full-name" class="form-control form-white" placeholder="Full Name">
+					<input type="text" name="email" class="form-control form-white" placeholder="Email Address">
+					<input type="text" name="phone" class="form-control form-white" placeholder="Phone Number">
+					<input type="text" name="addr1" class="form-control form-white" placeholder="Address Line 1">
+					<input type="text" name="addr2" class="form-control form-white" placeholder="Address Line 2">
+					<input type="text" name="city" class="form-control form-white" placeholder="City">
+					<select name="state" class="form-control form-white">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+					<input type="text" name="zip" class="form-control form-white" placeholder="Zip Code">
+					<h4 class="white">Did someone refer you to us? (leave blank if no)</h4>
+					<input type="text" name="referral" class="form-control form-white" placeholder="Referral">
+					<h4 class="white">Select a groomer</h4>
+					<div class="checkbox-holder text-left">
+						<div class="radio-btn radio">
+							<input type="radio" name="groomer" id="groomer0" class="form-control form-white radio" checked="checked">
+							<label for="groomer0"><span>No Preference</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="radio-btn radio">
+							<input type="radio" name="groomer" id="groomer1" class="form-control form-white radio">
+							<label for="groomer1"><span>Lysa</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="radio-btn radio">
+							<input type="radio" name="groomer" id="groomer2" class="form-control form-white radio">
+							<label for="groomer2"><span>Michael</span></label>
+						</div>
+					</div>
+
+					<h3 class="white">Tell us about your dog</h3>
+					<input type="text" name="dog-name" class="form-control form-white" placeholder="Dog Name">
+					<input type="text" name="dog-breed" class="form-control form-white" placeholder="Dog Breed">
+					<input type="text" name="dog-age" class="form-control form-white" placeholder="Dog Age">
+					<input type="text" name="dog-weight" class="form-control form-white" placeholder="Dog Weight (in lbs)">
+					<input type="text" name="dog-last-grooming" class="form-control form-white" placeholder="Last Grooming">
+					<textarea name="dog-medical-concerns" class="form-control form-white" rows=4 placeholder="Medical Concerns/Other Notes"></textarea>
+					<textarea name="dog-behavioral-notes" class="form-control form-white" rows=4 placeholder="Behavioral Notes"></textarea>
+
+					<h4 class="white">Does your dog display any of the following while being groomed?</h4>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="dog-display-anxiety" name="dog-display-anxiety" />
+							<label for="dog-display-anxiety"><span>Anxiety/Shaking/Panting</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="dog-display-aggression" name="dog-display-aggression" />
+							<label for="dog-display-aggression"><span>Aggression/Will attempt biting</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="dog-display-soils" name="dog-display-soils" />
+							<label for="dog-display-soils"><span>Soils himself/herself</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="dog-display-growling" name="dog-display-growling" />
+							<label for="dog-display-growling"><span>Growling</span></label>
+						</div>
+					</div>
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="dog-display-noisy" name="dog-display-noisy" />
+							<label for="dog-display-noisy"><span>Noisy/Barks</span></label>
+						</div>
+					</div>
+
+
+
+					<!--<div class="radio">-->
+						<!--<input type="radio" name="groomer" id="groomer1" class="form-control form-white radio">-->
+						<!--<label for="groomer1">Lysa</label>-->
+					<!--</div>-->
+
+					<!--<input type="radio" name="groomer" id="groomer2" class="form-control form-white radio">-->
+					<!--<label for="groomer2">Michael</label>-->
 					<!--<div class="dropdown">-->
 						<!--<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
 							<!--Pricing Plan-->
@@ -287,12 +416,6 @@
 							<!--<li class="animated lightSpeedIn"><a href="#">Free trial class</a></li>-->
 						<!--</ul>-->
 					<!--</div>-->
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="None" id="squaredOne" name="check" />
-							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-						</div>
-					</div>
 					<button type="submit" class="btn btn-submit">Submit</button>
 				</form>
 			</div>
